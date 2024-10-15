@@ -70,7 +70,7 @@ function Swap() {
         }, 500);
 
         return () => clearTimeout(debounce);
-    }, [inAmount, slippageBps]);
+    }, [inAmount, slippageBps, outputMint]);
 
     const swapToken = async() => {
         if(publicKey && signTransaction) {
